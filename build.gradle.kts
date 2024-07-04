@@ -28,7 +28,7 @@ dependencies {
     testImplementation("kotlin.graphics:unsigned:3.3.32")
 }
 
-kotlin.jvmToolchain { languageVersion.set(JavaLanguageVersion.of(8)) }
+kotlin.jvmToolchain { languageVersion.set(JavaLanguageVersion.of(21)) }
 
 tasks {
     withType<KotlinCompile<*>>().all { kotlinOptions { freeCompilerArgs += listOf("-opt-in=kotlin.RequiresOptIn") } }
